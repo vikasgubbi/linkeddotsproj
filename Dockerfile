@@ -6,6 +6,8 @@ RUN apt-get update -q
 RUN apt-get install -yqq wget vim git curl ssh build-essential
 
 # Install NodeJS
+RUN apt-get install curl
+RUN apt-get install sudo
 RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 RUN sudo apt-get install -yq nodejs
 
