@@ -3,9 +3,9 @@ MAINTAINER vikas
 # Install Utilities
 RUN apt-get update -q
 # RUN apt-get install -yqq wget aptitude htop vim git traceroute dnsutils curl ssh sudo tree tcpdump nano psmisc gcc make build-essential libfreetype6 libfontconfig libkrb5-dev
-RUN apt-get install -yqq wget vim git curl ssh build-essential
+RUN apt-get install -yqq wget vim git ssh build-essential
 
-# Install NodeJS
+# Install Node
 RUN apt-get install curl
 RUN apt-get install sudo
 RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
