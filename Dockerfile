@@ -12,7 +12,7 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 RUN sudo apt-get install -yq nodejs
 
 # Install Meanstackjs Prerequisites
-RUN npm install --quiet -g mocha pm2 mongo-express nodemon node-inspector
+RUN npm install --quiet -g mocha pm2 mongo-express nodemon 
 
 RUN mkdir /opt/meanstackjs
 WORKDIR /opt/meanstackjs
